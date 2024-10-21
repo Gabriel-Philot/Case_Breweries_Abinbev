@@ -1,0 +1,13 @@
+{
+  "api": {
+    "url": "https://api.openbrewerydb.org/v1/breweries"
+  },
+  "paths": {
+    "bronze": "/opt/airflow/lakehouse/bronze_layer",
+    "silver": "/opt/airflow/lakehouse/silver_layer",
+    "gold": "/opt/airflow/lakehouse/golden_layer"
+  },
+  "other_settings": {
+    "per_page": 100
+  }
+}
