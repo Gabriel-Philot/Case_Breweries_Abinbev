@@ -54,8 +54,12 @@ zcase_ambev/
 ├── docker-compose.yaml
 ├── Dockerfile
 ├── README.md
+├── data_viz_notebook.ipynb
 ├── requirements.txt
 ```
+
+> 🍀 Visualização dos dados nas camadas: [data_viz_notebook.ipynb](caminho/para/seu/notebook.ipynb)
+
 
 ## Descrição da Dag [brew_dag.py]
 
@@ -84,16 +88,24 @@ Nas tasks principais (1, 5, 6), explorei de maneira simples o monitoramento das 
 
 ## Pontos de melhoria
 
-Quando comecei o case, estava mirando em fazer no EKS (via Terraform e Argo), porém meu PC queimou (Minikube sem condições no PC fraquinho) no meio do processo (além da surra que tomei das permissões da AWS), e acabei com essa solução mais simples. Dito isso, vou listar os pontos de melhoria.
+Quando comecei o case, estava mirando em fazer no EKS (via Terraform e Argo), porém meu PC queimou (Minikube sem condições no PC fraquinho) no meio do processo (além da surra que tomei das permissões da AWS), acabei com essa solução mais simples. Dito isso, vou listar os pontos de melhoria.
 
 * Escalabilidade: Esta solução faz mau uso da computação distribuída do Spark. Atualmente, temos uma solução que roda o Spark em apenas um worker do Airflow, o que pode facilmente gerar gargalos em cenários produtivos. Portanto, a solução deve migrar para um ambiente onde o Spark possa escalar seus workers e ter alta disponibilidade. De imediato, penso na utilização do SPOK (Spark Operator for Kubernetes), permitindo uma conexão eficiente entre Spark, Airflow e Kubernetes, com alto desempenho.
 
+
 * Esteiras de CI/CD: Aproveitando o gancho do Kubernetes, as esteiras de CI/CD têm um grande potencial para a próxima etapa da solução, garantindo uma infraestrutura como código (IaC) bem feita junto com o ArgoCD. As esteiras podem criar e destruir o cluster conforme a necessidade de negócio, proporcionando uma solução altamente elástica (FinOps agradece). Além disso, as esteiras podem incluir mais etapas de testes e segregação de ambientes, possibilitando mitigar ainda mais as falhas de desenvolvimento.
 
+
+
+
+
 ## Passos para executar o projeto.
+[!Note]
+> Projeto desenvolvido em ambiente ubunto
+
 ### atenção projeto desenvolvido em ambiente ubunto
 ### Requisitos
-docker 
+* docker
 
 * Clonar repo:
 ```sh
