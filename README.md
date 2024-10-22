@@ -142,7 +142,6 @@ login e senha: airflow
 entrar na parte de dags e acionar a brew_dag.py
 
 
-
 ## Conslusão & Agradecimentos
 Ao longo deste projeto, foi possível implementar um fluxo completo de ETL utilizando várias ferramentas open source amplamente utilizadas no mundo de engenharia de dados.
 Concerteza foi um case bem legal de ser feito, bem completo e da para evoluir muito em cima dele.
