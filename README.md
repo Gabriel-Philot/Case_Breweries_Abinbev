@@ -138,7 +138,6 @@ apos o airflow subir
 http://localhost:8080/
 ```
 login e senha: airflow
-acessar a dag e por ela pra rodar.
 
 ## Conslusão & Agradecimentos
 Ao longo deste projeto, foi possível implementar um fluxo completo de ETL utilizando várias ferramentas open source amplamente utilizadas no mundo de engenharia de dados.
