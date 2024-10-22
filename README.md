@@ -1,6 +1,6 @@
 # Case_Breweries_Abinbev
 
-O desafio deste case foi desenvolver um pipeline de dados para buscar, processar e armazenar informações de cervejarias a partir da API Open Brewery DB. O pipeline segue uma arquitetura em camadas (bronze, prata e ouro) para estruturar e transformar os dados ao longo do processo.
+O desafio deste case foi desenvolver um pipeline de dados para buscar, processar e armazenar informações de cervejarias a partir da API Open Brewery. O pipeline segue uma arquitetura em camadas (bronze, prata e ouro) para estruturar e transformar os dados ao longo do processo.
 
 <img src="/imgs/arquiteture_draw.png" />
 
@@ -65,7 +65,7 @@ zcase_ambev/
 <img src="/imgs/dag_brew.png" />
 
 * Primeira task:
-    * Responsável por extrair os dados da API e persistir seus dados na camada bronze.
+    * Responsável por extrair os dados da API [https://api.openbrewerydb.org/v1/breweries] e persistir seus dados na camada bronze.
 * Segunda task:
     * Responsável por validar se os dados persistidos na camada bronze possuem o mesmo valor do endpoint "total" dos metadados da API. Aqui também temos uma validação na estrutura do schema dos dados da camada bronze.
 * Terceira task:
