@@ -137,6 +137,7 @@ apos o airflow subir
 ```sh
 http://localhost:8080/
 ```
+login e senha: airflow
 acessar a dag e por ela pra rodar.
 
 ## Conslusão & Agradecimentos
