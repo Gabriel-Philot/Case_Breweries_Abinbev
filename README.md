@@ -6,7 +6,6 @@ O desafio deste case foi desenvolver um pipeline de dados para buscar, processar
 
 > 💾 esboço da arquitetura
 
-
 ## Resumo dos principais conceitos e technologias utilizadas.
 * Pipeline criada na DAG do Airflow
 * Airflow rodando localmente dentro de um container (docker)
@@ -96,16 +95,13 @@ Quando comecei o case, estava mirando em fazer no EKS (via Terraform e Argo), po
 * Esteiras de CI/CD: Aproveitando o gancho do Kubernetes, as esteiras de CI/CD têm um grande potencial para a próxima etapa da solução, garantindo uma infraestrutura como código (IaC) bem feita junto com o ArgoCD. As esteiras podem criar e destruir o cluster conforme a necessidade de negócio, proporcionando uma solução altamente elástica (FinOps agradece). Além disso, as esteiras podem incluir mais etapas de testes e segregação de ambientes, possibilitando mitigar ainda mais as falhas de desenvolvimento.
 
 
-
-
-
 ## Passos para executar o projeto.
-[!Note]
+>[!Note]
 > Projeto desenvolvido em ambiente ubunto
 
-### atenção projeto desenvolvido em ambiente ubunto
-### Requisitos
-* docker
+
+### Requisitos: docker
+
 
 * Clonar repo:
 ```sh
@@ -142,3 +138,10 @@ apos o airflow subir
 http://localhost:8080/
 ```
 acessar a dag e por ela pra rodar.
+
+## Conslusão & Agradecimentos
+Ao longo deste projeto, foi possível implementar um fluxo completo de ETL utilizando várias ferramentas open source amplamente utilizadas no mundo de engenharia de dados.
+Concerteza foi um case bem legal de ser feito, bem completo e da para evoluir muito em cima dele.
+Agradeço desde já pela oportuinidade e sigo aberto para qualquer questionamento.
+
+Att, [Gabriel-Philot](https://www.linkedin.com/in/gabriel-philot/)

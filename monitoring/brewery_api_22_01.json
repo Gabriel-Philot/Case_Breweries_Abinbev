@@ -1,0 +1,20 @@
+[
+    {
+        "task_name": "api_ingestion_to_bronze",
+        "start_time": "2024-10-22 01:40:07",
+        "end_time": "2024-10-22 01:42:21",
+        "elapsed_time_seconds": 134.0618896484375
+    },
+    {
+        "task_name": "bronze_to_silver",
+        "start_time": "2024-10-22 01:48:56",
+        "end_time": "2024-10-22 01:49:20",
+        "elapsed_time_seconds": 23.39896059036255
+    },
+    {
+        "task_name": "silver_to_gold",
+        "start_time": "2024-10-22 01:49:29",
+        "end_time": "2024-10-22 01:50:08",
+        "elapsed_time_seconds": 39.1765558719635
+    }
+]
