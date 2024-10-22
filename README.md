@@ -58,7 +58,7 @@ zcase_ambev/
 ├── requirements.txt
 ```
 
-> 🍀 Visualização dos dados nas camadas: [data_viz_notebook.ipynb](caminho/para/seu/notebook.ipynb)
+> 🍀 Visualização dos dados nas camadas: [data_viz_notebook.ipynb](https://github.com/Gabriel-Philot/Case_Breweries_Abinbev/blob/main/data_viz_notebook.ipynb)
 
 
 ## Descrição da Dag [brew_dag.py]
