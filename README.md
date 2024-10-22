@@ -65,7 +65,7 @@ zcase_ambev/
 <img src="/imgs/dag_brew.png" />
 
 * Primeira task:
-    * Responsável por extrair os dados da API [https://openbrewerydb.org/] e persistir seus dados na camada bronze.
+    * Responsável por extrair os dados da API [https://openbrewerydb.org/] (modficiar/paginar o endpoint para extração adequada dos dados) e persistir seus dados na camada bronze.
 * Segunda task:
     * Responsável por validar se os dados persistidos na camada bronze possuem o mesmo valor do endpoint "total" dos metadados da API. Aqui também temos uma validação na estrutura do schema dos dados da camada bronze.
 * Terceira task:
